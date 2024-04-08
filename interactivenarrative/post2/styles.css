@@ -1,0 +1,300 @@
+/* defaults */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+/* defaults end */
+
+
+/* navigation*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.container {
+    background: url(images/background.jpg);
+    margin: auto;
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-family: "norman-stencil", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 78px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+h1 a {
+    transition: color 250ms;
+    color: rgb(255, 255, 255);
+}
+
+h1 a:hover {
+    color: rgb(175, 175, 175);
+}
+
+nav ul {
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li a {
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 24px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+nav li {
+    transition: transform 250ms;
+}
+
+nav li:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+.tagline {
+    display: none;
+}
+
+/*navigation end */
+
+/* article */
+
+article {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    font-family: "norman-stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 60px;
+    color: #444444;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
+
+.articledate {
+    display: block;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #444444;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
+
+article p {
+    font-family: hoss-round, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #444444;
+    padding: 10px 40px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+article img {
+    padding: 20px;
+}
+
+aside {
+    display: none;
+}
+
+aside h3 {
+    font-family: "norman-stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 36px;
+    color: #444444;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+}
+
+aside ul {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+aside ul li a {
+    font-family: hoss-round, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #444444;
+    padding: 5px 40px;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, .25);
+    transition: color 250ms;
+}
+
+aside ul li a:hover {
+    color: rgb(140, 140, 140);
+}
+
+.recent {
+    padding: 5px
+}
+
+.popular {
+    padding: 5px
+}
+
+aside img {
+    position: relative;
+    top: -30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    transition: transform 250ms;
+}
+
+aside img:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+/* article end */
+
+/* footer */
+
+footer {
+    background: url(images/footer.jpg);
+    margin: auto;
+}
+
+footer p {
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer h1 {
+    font-size: 60px;
+    transition: color 250ms;
+    text-align: center;
+}
+
+.footernav {
+    display: none;
+}
+
+footer h1 a {
+    color: white;
+}
+
+/* footer end */
+
+/* media query 500px */
+/* media query 500px end */
+
+@media only screen and (min-width: 800px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .articleblock {
+        display: flex;
+        margin: auto;
+    }
+
+    article {
+        flex: 4;
+    }
+
+    aside {
+        display: block;
+        flex: 2;
+    }
+
+    .footernav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footerlist {
+        flex: 1;
+        gap: 20px;
+    }
+
+    article img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .articleblock {
+        width: 80%;
+    }
+}

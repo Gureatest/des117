@@ -1,0 +1,199 @@
+/* defaults */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+/* defaults end */
+
+html {
+    background: rgb(139, 88, 128);
+    background: linear-gradient(0deg, rgba(139, 88, 128, 1) 0%, rgba(254, 254, 254, 1) 90%);}
+
+header {
+    padding: 10px;
+}
+
+h1 {
+    font-family: "neato-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+nav ul {
+    text-align: center;
+    line-height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+}
+
+nav li {
+    transition: transform 250ms;
+}
+
+nav li:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+/* articles */
+
+article {
+    padding: 20px 20px;
+    display: block;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(129, 38, 112, 0.304);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2em;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-family: "neato-serif", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    padding-right: 10px;
+}
+
+
+time {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+}
+
+article p {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    line-height: 2em;
+    padding: 5px 0px;
+}
+
+img {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.cited {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+    line-height: 1.5em;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.cited p {
+    font-family: "neato-serif", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    transition: transform 250ms;
+}
+
+img:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+/* footer */
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    line-height: 2em;
+    font-size: 16px;
+    color: rgb(34, 34, 34);
+    box-shadow: 0px 0px 20px rgba(133, 99, 127, 0.443);
+}
+
+footer p,
+address {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media only screen and (min-width: 600px) {
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    nav ul li {
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .articlegroup {
+        width: 800px;
+        margin: auto;
+        margin-bottom: 30px;
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,209 @@
+html {
+    background: url(images/backgroundMobile.jpg);
+    background-size: cover;
+}
+
+/* defaults! */
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+/* defaults end */
+
+body {
+    color: white;
+}
+    
+h2 {
+    font-family: "eckmannpsych-small", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    text-shadow: 2px 2px 20px black;
+}
+
+.name {
+    font-family: "eckmannpsych-small", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 20px;
+    text-shadow: 2px 2px 20px black;
+    text-align: center;
+}
+
+.title {
+    font-family: "eckmannpsych-small", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 20px black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 5px black;
+    padding: 15px;
+}
+
+li {
+    padding: 5px;
+}
+
+img {
+    box-shadow: 1px 1px 5px black;
+    transition: transform 250ms;
+}
+
+img:hover {
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+.description {
+    line-height: 30px;
+    display: block;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 5px black;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+p {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    text-shadow: 5px 5px 20px black;
+    padding-bottom: 10px;
+    font-family: "hoss-round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    color: white;
+}
+
+ul li a {
+    transition: transform 250ms;
+}
+
+ul li a:hover {
+    background-color: rgba(232, 232, 232, 0.237);
+    transform: scaleX(1.05) scaleY(1.05);
+}
+
+header {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    border-bottom: 3px white solid;
+    box-shadow: 1px 1px 20px black;
+}
+
+
+footer {
+    background: url(images/banner.jpg);
+    background-size: cover;
+    border-top: 3px white solid;
+    box-shadow: 1px 1px 10px black;
+}
+
+.container {
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        background: url(images/background.jpg);
+        background-size: cover;
+    }
+    .container {
+        display: flex;
+        max-width: 1200px;
+        gap: 20px;
+        margin: auto;
+    }
+    main, aside {
+        flex: 1;
+    }
+    aside {
+        margin-right: 20px;
+    }
+    footer {
+        padding-top: 20px;
+        background-repeat: no-repeat;
+        background-position: 0;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        gap: 20px
+    }
+
+    main section {
+        flex: 1;
+    }
+
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+
+    html {
+        background: url(images/background.jpg);
+        background-size: cover;
+    }
+}
